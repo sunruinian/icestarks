@@ -1,0 +1,46 @@
+{
+  "plugins": [
+    "build-plugin-icestark",
+    ["build-plugin-fusion", {
+      "themePackage": "@icedesign/theme",
+      "themeConfig": {
+        "nextPrefix": "next-fd-"
+      }
+    }],
+    [
+      "build-plugin-antd",
+      {
+        "themeConfig": {}
+      }
+    ]
+  ],
+  "externals": {
+    "React": "React",
+    "React-dom": "React-dom"
+  },
+  "modeConfig": {
+    "test": {
+      "define": {},
+      "vendor": false
+    },
+    "pre": {
+      "define": {},
+      "vendor": false
+    },
+    "prod": {
+      "define": {},
+      "vendor": true,
+      "plugins": ["build-plugin-esbuild"]
+    }
+  },
+  "proxy": {
+	  "/api": {
+      "enable": true,
+      "target": "https://unidemo.dcloud.net.cn"
+    },
+    "/apilocal": {
+      "enable": true,
+      "target": "https://unidemo.dcloud.net.cn"
+    }
+  }
+}

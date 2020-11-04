@@ -1,0 +1,37 @@
+{
+  "name": "example-icestark-layout",
+  "description": "icestark layout",
+  "dependencies": {
+    "@alifd/next": "^1.19.12",
+    "@ant-design/icons": "^4.2.2",
+    "@ant-design/pro-layout": "^6.5.9",
+    "@ice/stark-data": "^0.1.2",
+    "@icedesign/theme": "^1.2.0",
+    "antd": "^4.7.3",
+    "bizcharts": "^4.0.14",
+    "ice.js": "^1.0.11",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1"
+  },
+  "devDependencies": {
+    "@types/react": "^16.9.13",
+    "@types/react-dom": "^16.9.4",
+    "build-plugin-antd": "^0.1.0",
+    "build-plugin-fusion": "^0.1.0",
+    "build-plugin-icestark": "^1.0.11"
+  },
+  "scripts": {
+    "start:dev": "icejs start",
+    "start:test": "icejs start --mode test",
+    "start:prod": "icejs start --mode prod",
+    "build:dev": "icejs build",
+    "build:test": "icejs build --mode test",
+    "build:prod": "icejs build --mode prod",
+    "lint": "npm run eslint && npm run stylelint",
+    "eslint": "eslint --cache --ext .js,.jsx ./",
+    "stylelint": "stylelint ./**/*.scss"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  }
+}
